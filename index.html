@@ -8,31 +8,25 @@
     <script src="./app.js" defer></script>
   </head>
   <body>
-    <!-- <marquee behavior="alternate">
-      <img id="smallImg" class="smallImg" src="./assets/fish.jpg" />
-      This text will bounce</marquee
-    >
-
-    <h1>Gallery Demo</h1>
-    <section class="gallery-wrapper" id="gallery-wrapper">
-      <img src="./assets/fish.jpg" alt="A picture of golden fried fish" />
-      <img
-        src="./assets/chips.jpg"
-        alt="A picture of crispy french fried potatos"
-      />
-      <img
-        src="./assets/pies.jpg"
-        alt="A picture of a collection of savoury pies"
-      />
-    </section>
-    <section class="display-wrapper">
-      <img id="displayImage" src="./assets/pies.jpg" alt="placeholder" />
-    </section> -->
-
-    <h1></h1>
-    <form id="searchForm">
-      <input name="search" />
-    </form>
-    <div id="newImages"></div>
+    <header>
+      <form id="search">
+        <input name="search" type="text" placeholder="search for an image" />
+      </form>
+    </header>
+    <!-- main -->
+    <main>
+      <section class="display-image-wrapper">
+        <img
+          id="display-image"
+          class="display-image"
+          src="./assets/chips.jpg"
+        />
+      </section>
+      <section id="thumbnail-wrapper" class="thumbnail-wrapper">
+        <img src="./assets/chips.jpg" />
+        <img src="./assets/fish.jpg" />
+        <img src="./assets/pies.jpg" />
+      </section>
+    </main>
   </body>
 </html>
