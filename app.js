@@ -41,6 +41,14 @@ function renderImages(data) {
       displayImage.alt = img.alt;
     });
 
+    img.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        console.log("Enter Key Pressed");
+        displayImage.src = img.src;
+        displayImage.alt = img.alt;
+      }
+    });
+
     document.getElementById("thumbnail-wrapper").appendChild(img);
   }
 }
